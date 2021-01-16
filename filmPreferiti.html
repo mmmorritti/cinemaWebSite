@@ -12,46 +12,37 @@
 <body>
     <!--INIZIO-->
     <div class="container">
-          <!--NAVBAR-->
-          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">CINESCURIOS</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarColor01">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home
-                    <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                  </div>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" href="#">CINECURIOS</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="home.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="filmPreferiti.html">I Miei Film Preferiti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registiPreferiti.html">I Miei Registi Preferiti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="curiosita.html">Curiosità</a>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </nav>
+
+        <br>
+        <br>
 
           <!--BOX-->
         <div class="jumbotron">
@@ -68,22 +59,56 @@
                     <th scope="col">TITOLO</th>
                     <th scope="col">ANNO DI USCITÀ</th>
                     <th scope="col">REGISTA</th>
+                    <th scope="col">GENERE</th>
+                    <th scope="col">PAESE DI PRODUZIONE</th>
                     <th scope="col">VOTO IMDb</th>
                   </tr>
                 </thead>
                 <tbody>
                   
                   <tr class="table-primary">
-                    <th scope="row">OLDBOY</th>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
+                    <th scope="row" id="title">OLD BOY</th>
+                    <td>2003</td>
+                    <td>Park Chan-wook</td>
+                    <td>Noir, Azione, Thriller</td>
+                    <td>Corea</td>
+                    <td>8.4/10</td>
                   </tr>
-                  <tr class="table-default">
-                    <th scope="row">Secondary</th>
-                    <td>Column content</td>
-                    <td>Column content</td>
-                    <td>Column content</td>
+
+                  <tr class="table-secondary">
+                    <th scope="row">STRADE PERDUTE</th>
+                    <td>1997</td>
+                    <td>David Lynch</td>
+                    <td>Noir, Thriller, Grottesco</td>
+                    <td>USA/Francia</td>
+                    <td>7.6/10</td>
+                  </tr>
+
+                  <tr class="table-primary">
+                    <th scope="row" id="title">ALPS</th>
+                    <td>2011</td>
+                    <td>Yorgos Lanthimos</td>
+                    <td>Drammatico</td>
+                    <td>Grecia</td>
+                    <td>6.4/10</td>
+                  </tr>
+                  
+                  <tr class="table-secondary">
+                    <th scope="row">AMAMI SE HAI CORAGGIO</th>
+                    <td>2003</td>
+                    <td>Yann samuell</td>
+                    <td>Commedia, Dramma, Romantico</td>
+                    <td>Francia</td>
+                    <td>7.6/10</td>
+                  </tr>
+
+                  <tr class="table-primary">
+                    <th scope="row" id="title">ERASERHEAD</th>
+                    <td>1977</td>
+                    <td>David Lynch</td>
+                    <td>Fantasy, Horror</td>
+                    <td>Grecia</td>
+                    <td>7.4/10</td>
                   </tr>
               
                   
