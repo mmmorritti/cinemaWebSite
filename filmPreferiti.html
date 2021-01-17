@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css" integrity="sha384-RxqHG2ilm4r6aFRpGmBbGTjsqwfqHOKy1ArsMhHusnRO47jcGqpIQqlQK/kmGy9R" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../javascript/main.js"></script>
+    
+    
     <title>FILM PREFERITI</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
     <div class="container">
         <!--NAVBAR-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-          <a class="navbar-brand" href="#">CINECURIOS</a>
+          <a class="navbar-brand" href="home.html">CINECURIOS</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -57,10 +59,11 @@
                 <thead>
                   <tr class="table-dark">
                     <th scope="col">TITOLO</th>
-                    <th scope="col">ANNO DI USCITÀ</th>
+                    <th scope="col">ANNO</th>
                     <th scope="col">REGISTA</th>
                     <th scope="col">GENERE</th>
-                    <th scope="col">PAESE DI PRODUZIONE</th>
+                    <th scope="col">PAESE</th>
+                    <th scope="col">RECENSIONE</th>
                     <th scope="col">VOTO IMDb</th>
                   </tr>
                 </thead>
@@ -72,6 +75,44 @@
                     <td>Park Chan-wook</td>
                     <td>Noir, Azione, Thriller</td>
                     <td>Corea</td>
+
+                    <td>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#OldBoy">
+                        Clicca qui
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="OldBoy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <div style="flex-direction:column;">
+                                <h1 class="modal-title">OLD BOY</h5>
+                                <h5>Ecco la recensione!!</h5>
+                             </div>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              
+                             <img src="../img/film/oldboy.jpg"  alt="Mia Immagine" width="155" height="220" style="float:left;margin: 10px">
+                              <p>
+                                Dae-su, sposato e con figlia piccola, è uomo dalle molte amanti e con il vizio dell'alcol. Una sera viene fermato dalla polizia per ubriachezza molesta. Non appena rilasciato, scompare nel nulla. Si risveglia in una squallida stanza, dove è tenuto prigioniero. Poco dopo, scopre che sua moglie è stata assassinata e lui è il principale sospettato. La sua prigionia dura quindici anni. Un tempo infinito, passato a covare un odio profondo verso il suo sconosciuto aguzzino e a prepararsi fisicamente alla vendetta.
+                                Benvenuti nell'incubo visionario di Chan-wook Park, regista di spicco, al fianco di Kim Ki-duk, della Nouvelle Vague del cinema coreano. Che non ha nulla da invidiare, quanto a tensione e suspense, al cinema di genere americano, ma spesso e volentieri lo supera in profondità e torbidezza psicologica e in crudezza del racconto. Un cinema di genere estremamente nero, quello firmato da Park, che sa farsi d'autore, seppur in maniera molto diversa dallo stile di Quentin Tarantino, che lo ha insignito a Cannes del Gran Premio della giuria da lui presieduta. È vero che il cuore di Oldboy è la vendetta, proprio come nella maggior parte dei film del regista di Pulp Fiction. Ma qui la violenza consumata nella corsa della vittima all'inseguimento del suo carnefice non lascia nessuna concessione al ludico. L'affannosa ricerca di Dae-su - interpretato dall'ottimo Choi Min-sik - a caccia della verità sul suo carceriere è faccenda estremamente seria per il regista, che ne lascia traboccare tutta la gravità, avvinghiando lo spettatore in un vortice di passioni malate sempre più livido e allucinato, con l'andamento lacerante di una tragedia greca alla "Edipo Re". Il salto nel vuoto dell'incubo torbido del protagonista - scandito da una musica che più adatta non poteva essere - toglie il fiato e lascia stremati. Sopraffatti da un mondo dominato dalla violenza e dalla follia di istinti bestiali, dove persino l'amore è sbagliato. Così, più Dae-su si avvicina al suo rapitore e alle ragioni delle sue azioni criminose, più la luce in fondo al tunnel si affievolisce.
+                                Lo stile di ripresa e montaggio accentuano il senso di angoscia claustrofobica e asfissiante provata da un protagonista che, tornato libero, si rende conto di essere ancora prigioniero, solo in una stanza più grande. La sua fuga di uomo braccato, spiato e controllato non può che esplodere in una memorabile rissa in piano sequenza, in cui Dae-su affronta da solo, a calci, pugni e martellate, un fitto branco di aggressori. Ma l'incubo non è finito, i colpi di scena sono dietro l'angolo e mozzano il fiato. L'unica concessione al colore, e alla vita, è quel rosso finale nel bianco della neve, simbolo di speranza e forse anche di riscatto, ma non di una nuova purezza, impossibile da raggiungere nel mondo sporco di Chan-wook Park. Autore di un cinema che si conficca nella pelle e nell'anima dei suoi protagonisti, come dei suoi spettatori.
+                              </p>
+                            
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+
                     <td>8.4/10</td>
                   </tr>
 
@@ -81,6 +122,88 @@
                     <td>David Lynch</td>
                     <td>Noir, Thriller, Grottesco</td>
                     <td>USA/Francia</td>
+                    <td>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#StradePerdute">
+                          Clicca qui
+                        </button>
+  
+                        <!-- Modal -->
+                        <div class="modal fade" id="StradePerdute" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <div style="flex-direction:column;">
+                                  <h1 class="modal-title">STRADE PERDUTE</h5>
+                                  <h5>Ecco la recensione!!</h5>
+                               </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                
+                               <img src="../img/film/stradeperdute.jpg"  alt="Mia Immagine" width="155" height="220" style="float:left;margin: 10px">
+                                <p>
+                                  Sarebbe inutile dissezionare frame by frame Strade perdute (1997), come d’altronde avrebbe poco senso farlo per 
+                                  ogni film diretto da David Lynch. Molto più utile, invece, è cercare di osservare la totalità dell’opera e tentare 
+                                  di individuarne il senso complessivo, sempre se un’operazione di questo tipo si dia come effettivamente possibile. 
+                                  Ridurre ad un intero ben definito, analizzabile nelle sue parti, un film di David Lynch sarebbe forse chiedere troppo 
+                                  nei confronti della poetica di un autore che ha sempre descritto la propria visione del cinema come un insieme di idee 
+                                  che convergono e fluiscono l’una nell’altra, decostruendo ogni intenzione narrativa e rifuggendo da ogni possibile interpretazione. 
+                                  Il medium cinematografico è tuttavia sin dagli albori anche messa in immagine del surreale e dell’impossibile, 
+                                  quindi una riflessione mossa in tal senso sembra essere perlomeno abbozzabile.
+                                </p>
+                                <p>
+                                  L’intreccio di Strade perdute si sofferma su Fred, un sassofonista di musica jazz intrepretato da Bill Pullman, 
+                                  e sulla moglie Renee (Patricia Arquette), i quali da qualche giorno ricevono delle videocassette presso la loro 
+                                  abitazione da parte di qualcuno che, come mostra il contenuto dei nastri, li sta segretamente osservando. 
+                                  Durante una festa, Fred incontra inoltre un personaggio inquietante, denominato nei crediti come “l’uomo misterioso” (Robert Blake), 
+                                  che sostiene di essere in quello stesso momento anche a casa del jazzista. Turbato dall’incontro, Fred ritorna a casa e 
+                                  il giorno seguente riceve un’ulteriore videocassetta che visiona da solo: il nastro mostra Fred stesso assassinare Renee, 
+                                  un fatto che non ricorda di aver compiuto e per il quale viene condannato alla sedia elettrica.
+                                </p>
+                                <p>
+                                  A partire da questo momento, la struttura del film subisce un radicale mutamento che sconvolge persino il genere di riferimento, 
+                                  che da thriller psicologico si trasforma in un noir con forti sottotesti ironici e grotteschi. La particolare architettura narrativa
+                                  che definisce Strade perdute è stata paragonata nel corso degli anni da diversi critici al nastro di Möbius, per la caratteristica sostanziale
+                                  di ripresentare alcuni aspetti della prima sezione del film nella seconda, alterandone gli elementi predominanti, causando così un effetto déjà vu 
+                                  che tuttavia non si definisce propriamente come tale. La seconda parte dell’opera infatti vede un nuovo contesto con un nuovo protagonista e una 
+                                  trama differente rispetto alla prima metà, con diversi echi che si dimostreranno fondamentali nel determinare una parziale oasi di senso nei momenti finali del film.
+                                </p>
+                                <p>
+                                  A darsi come chiave di lettura principale in Strade perdute è la dimensione onirica, un tratto caratteristico di parte della produzione
+                                  filmografica di David Lynch, dalla serie di Twin Peaks sino al conturbante Mulholland Drive (2001) e al folle Inland Empire (2006). 
+                                  Già anticipato nella prima parte del film, con Fred che in numerose istanze si trova a sognare le proprie paranoie, trovandosi persino 
+                                  a vivere un sogno dentro il sogno in cui la faccia dell’uomo misterioso si sostituisce al viso della moglie, il tema onirico e allucinatorio 
+                                  diventa poi il substrato della seconda metà. Gli aspetti che si ripresentano, dall’uomo misterioso stesso alla doppelgänger di Renee 
+                                  (Alice, interpretata sempre da Patricia Arquette), sino alla rivelazione riguardante la vera identità del signor Eddy (Robert Loggia), 
+                                  sono gli indizi principali che Lynch ci lascia per cercare di ricostruire, perlomeno in parte, l’enigma apparentemente irrisolvibile che ci presenta.
+                                </p>
+                                <p>
+                                  Il viaggio di Fred, simboleggiato dalla frequente ripresa da parte di Lynch di strade buie e deserte, è un vero e proprio tentativo da parte del suo 
+                                  subconscio di ricostruire la propria realtà a partire dalle sue paranoie, per cercare una compensazione onirica alla triste verità di quanto ha fatto 
+                                  alla moglie nel suo delirio schizoide. In tal senso, Strade perdute è un esempio perfetto delle capacità del cinema di riflettere operativamente sullo scontro 
+                                  dialettico tra il reale e l’immaginario, offrendosi, come anticipato, come una tematizzazione dell’impossibilità di definire con precisione ultima l’orizzonte 
+                                  di significato che lo permea. Anche dopo le rivelazioni offerte nei minuti finali, a partire dalla sequenza tra Pete (Balthazar Getty) e Alice al di fuori dalla 
+                                  capanna nel deserto che si dimostra in grado di riassestare parzialmente lo stato delle cose, fornendo allo spettatore una possibile lettura degli eventi del film 
+                                  in stretta correlazione anche con la dimensione sessuale, lo statuto incerto di Strade perdute rimane tale, lasciando solamente quella che già dai primi minuti del film 
+                                  si percepiva come l’unica e perentoria verità: «Dick Laurent è morto».
+                                </p>
+                                <p>
+                                  Oltre ad anticipare un certo tipo di ricorso all’immaginario della videosorveglianza che sarebbe in seguito diventato un tratto caratteristico del cinema contemporaneo, 
+                                  come evidenziato per esempio da Michael Haneke in Caché (2005), David Lynch con Strade perdute realizza il suo primo passo sensibile verso un tipo di affermazione di una 
+                                  destrutturazione cinematografica strettamente legata alla frammentarietà che raggiungerà poi il suo apice durante la terza monumentale stagione di Twin Peaks.
+                                </p>
+                              
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </td>
                     <td>7.6/10</td>
                   </tr>
 
@@ -90,6 +213,7 @@
                     <td>Yorgos Lanthimos</td>
                     <td>Drammatico</td>
                     <td>Grecia</td>
+                    <td></td>
                     <td>6.4/10</td>
                   </tr>
                   
@@ -99,6 +223,7 @@
                     <td>Yann samuell</td>
                     <td>Commedia, Dramma, Romantico</td>
                     <td>Francia</td>
+                    <td></td>
                     <td>7.6/10</td>
                   </tr>
 
@@ -108,16 +233,24 @@
                     <td>David Lynch</td>
                     <td>Fantasy, Horror</td>
                     <td>Grecia</td>
+                    <td></td>
                     <td>7.4/10</td>
                   </tr>
               
                   
                 </tbody>
               </table>
-            
-            
-            
+
           </div>
     </div>
+
+    
+
+    
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
 </body>
 </html>
